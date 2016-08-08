@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<body>
+  <h1>Simplistic glTF online viewer</h1>
+  <div id="start">
+    <h2>Note</h2>
+    <p>This glTF viewer is <strong>very limited</strong> in its capabilities and does not fully support glTF</p>
+    <p>It is basically an educational starting point to parsing glTF and only offers rudimentary display capabilities</p>
+    <h2>Limitations</h2>
+    <ul>
+      <li>Assumes triangle type for all primitives</li>
+      <li>Ignores techniques, shaders, materials and displays basic wireframes</li>
+      <li>Does not support animations</li>
+      <li>Does not support camera information</li>
+      <li>Loads the default scene</li>
+      <li>Ignores matrix / TRS information</li>
+      <li>Requires indices</li>
+    </ul>
+    <h2>Try it</h2>
+    <p>Pick the .gltf and all .bin files to display below and click "Load files"</p>
+    <input type="file" id="uploads" multiple />
+    <button id="load">Load files</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+  <script src="viewer.js"></script>
+
+</body>
+</html>
